@@ -11,6 +11,10 @@
 "	* 256-color
 "		$ vi  ~/.bashrc
 "		export TERM="xterm-256color"
+"	* git
+"		$ sudo apt install git
+"	* Vundle
+"		git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 "============================================================
 
 "------------------------------------------------------------
