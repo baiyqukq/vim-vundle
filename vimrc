@@ -135,12 +135,15 @@ set shiftwidth=4
 set cindent 
 set cinoptions=t0
 
+" Enable to highlight doxygen tags
+let g:load_doxygen_syntax=1
+
 " Color scheme
-colorscheme desert
+"colorscheme desert
 "colorscheme wombat 
 "colorscheme inkpot
 "colorscheme molokai
-"colorscheme wombat256mod
+colorscheme wombat256mod
 
 " Change background color
 set background=dark
