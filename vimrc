@@ -8,6 +8,8 @@
 "	 	$ sudo apt-get install ctags
 "	 	Generate tags for header files
 "		$ ctags -R -f ~/.vim/tags/systags /usr/include /usr/local/include
+"		$ ctags -R --c++-kinds=+p --fields=iaS --extra=+q -f
+"		~/.vim/tags/SDL2tags /usr/include/SDL2
 "	* 256-color
 "		$ vi  ~/.bashrc
 "		export TERM="xterm-256color"
@@ -136,11 +138,12 @@ set cindent
 set cinoptions=t0
 
 " Color scheme
-colorscheme desert
+"colorscheme desert
 "colorscheme wombat 
 "colorscheme inkpot
 "colorscheme molokai
 "colorscheme wombat256mod
+colorscheme jellybeans
 
 " Change background color
 set background=dark
@@ -159,7 +162,7 @@ let &path.="/usr/include,/usr/local/include,"
 
 " Add tags files
 "set tags+=~/.vim/tags/systags
-"set tags+=~/.vim/tags/sdl2tags
+set tags+=~/.vim/tags/SDL2tags
 
 " FileType
 autocmd BufNewFile,BufRead *.psql			set filetype=psql
@@ -216,3 +219,8 @@ nnoremap <silent> <F7> :UpdateTypesFile <CR>
 " CamelCaseMotion
 "------------------------------------------------------------
 call camelcasemotion#CreateMotionMappings('<leader>')
+
+"------------------------------------------------------------
+" Merge
+"------------------------------------------------------------
+nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR>
