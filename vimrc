@@ -137,6 +137,9 @@ set shiftwidth=4
 set cindent 
 set cinoptions=t0
 
+" Enable to highlight doxygen tags
+let g:load_doxygen_syntax=1
+
 " Color scheme
 "colorscheme desert
 "colorscheme wombat 
