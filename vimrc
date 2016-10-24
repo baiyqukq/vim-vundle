@@ -140,6 +140,10 @@ set cinoptions=t0
 " Enable to highlight doxygen tags
 let g:load_doxygen_syntax=1
 
+" Enable Delphi
+let g:pascal_delphi=1
+let g:pascal_fpc=1
+
 " Color scheme
 "colorscheme desert
 "colorscheme wombat 
