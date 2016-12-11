@@ -52,6 +52,7 @@ Plugin 'honza/vim-snippets' " vim-snipmate optional
 Plugin 'garbas/vim-snipmate'
 Plugin 'mbbill/echofunc'
 Plugin 'scrooloose/nerdtree'
+Plugin 'vim-scripts/OmniCppComplete'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -196,7 +197,7 @@ autocmd FileType css	set omnifunc=csscomplete#Complete
 set completeopt=menuone,longest
 
 " key map
-nnoremap <silent> <F5> :!ctags -R --c++-kinds=+p --fields=iaS --extra=+q ../src<CR>
+nnoremap <silent> <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q ../src<CR>
 
 "------------------------------------------------------------
 " Taglist
@@ -230,4 +231,4 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 "------------------------------------------------------------
 " Merge
 "------------------------------------------------------------
-nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR>
+nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=+iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR>
