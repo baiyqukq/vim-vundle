@@ -151,7 +151,8 @@ let g:pascal_fpc=1
 "colorscheme inkpot
 "colorscheme molokai
 "colorscheme wombat256mod
-colorscheme jellybeans
+"colorscheme jellybeans
+colorscheme lucius
 
 " Change background color
 set background=dark
