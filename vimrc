@@ -136,7 +136,9 @@ set shiftwidth=4
 
 " C style indent
 set cindent 
-set cinoptions=t0
+
+" Custom style indent, but vim default is very better
+"set cinoptions=t0
 
 " Enable to highlight doxygen tags
 let g:load_doxygen_syntax=1
