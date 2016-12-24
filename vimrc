@@ -134,6 +134,8 @@ set softtabstop=4
 " Set << and >> command to move width
 set shiftwidth=4
 
+set autoindent
+
 " C style indent
 set cindent 
 
@@ -154,7 +156,8 @@ let g:pascal_fpc=1
 "colorscheme molokai
 "colorscheme wombat256mod
 "colorscheme jellybeans
-colorscheme lucius
+"colorscheme lucius
+colorscheme monokai
 
 " Change background color
 set background=dark
@@ -232,6 +235,7 @@ nnoremap <silent> <F7> :UpdateTypesFile <CR>
 call camelcasemotion#CreateMotionMappings('<leader>')
 
 "------------------------------------------------------------
-" Merge
+" Map
 "------------------------------------------------------------
 nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=+iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR>
+nmap <Leader>m :wa<CR>:make<CR><CR>:cw<CR>
