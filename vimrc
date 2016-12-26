@@ -53,6 +53,8 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'mbbill/echofunc'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/OmniCppComplete'
+"Plugin 'nathanaelkane/vim-indent-guides'		" Indent by highlight
+Plugin 'Yggdroot/indentLine'					" Indent by line
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -164,6 +166,9 @@ set background=dark
 
 " enable modeline(Good thing)
 set modeline
+
+" Custom tab display
+set list lcs=tab:\|\ "here is a space
 
 " Enable loading indent file for filetype
 filetype indent plugin on
