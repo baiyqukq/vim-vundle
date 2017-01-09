@@ -8,8 +8,7 @@
 "	 	$ sudo apt-get install ctags
 "	 	Generate tags for header files
 "		$ ctags -R -f ~/.vim/tags/systags /usr/include /usr/local/include
-"		$ ctags -R --c++-kinds=+p --fields=iaS --extra=+q -f
-"		~/.vim/tags/SDL2tags /usr/include/SDL2
+"		$ ctags -R --c++-kinds=+p --fields=+iaS --extra=+q -f ~/.vim/tags/SDL2tags /usr/include/SDL2
 "	* 256-color
 "		$ vi  ~/.bashrc
 "		export TERM="xterm-256color"
@@ -182,6 +181,7 @@ let &path.="/usr/include,/usr/local/include,"
 " Add tags files
 "set tags+=~/.vim/tags/systags
 set tags+=~/.vim/tags/SDL2tags
+set tags+=~/.vim/tags/tinyxml2tags
 
 " FileType
 autocmd BufNewFile,BufRead *.psql			set filetype=psql
