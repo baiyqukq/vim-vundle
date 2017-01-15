@@ -120,6 +120,9 @@ set hlsearch
 " Show line number 
 set number
 
+" Highlight current line
+set cursorline
+
 " Do not generate backup file
 set nobackup
 
