@@ -45,10 +45,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'magic-dot-files/TagHighlight'
-Plugin 'MarcWeber/vim-addon-mw-utils' " vim-snipmate required
-Plugin 'tomtom/tlib_vim' " vim-snipmate required
-Plugin 'honza/vim-snippets' " vim-snipmate optional
-Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips' " UltiSnips required
+Plugin 'honza/vim-snippets' " UltiSnips required'
 Plugin 'mbbill/echofunc'
 Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/OmniCppComplete'
@@ -178,6 +176,8 @@ filetype indent plugin on
 " Enable plugins
 filetype plugin on
 
+syntax on
+
 " Search files
 let &path.="/usr/include,/usr/local/include,"
 
@@ -196,6 +196,11 @@ autocmd BufNewFile,BufRead *.md				set filetype=markdown
 set dict+=~/.vim/dict/words_c
 set dict+=~/.vim/dict/words_cpp
 set dict+=~/.vim/dict/words_macro
+
+"------------------------------------------------------------
+" UltiSnips
+"------------------------------------------------------------
+let g:UltiSnipsExpandTrigger="<tab>"
 
 "------------------------------------------------------------
 " Omni code completion
