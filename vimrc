@@ -52,6 +52,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-scripts/OmniCppComplete'
 "Plugin 'nathanaelkane/vim-indent-guides'		" Indent by highlight
 Plugin 'Yggdroot/indentLine'					" Indent by line
+Plugin 'altercation/vim-colors-solarized'
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -159,7 +160,12 @@ let g:pascal_fpc=1
 "colorscheme wombat256mod
 "colorscheme jellybeans
 "colorscheme lucius
-colorscheme monokai
+"colorscheme monokai
+
+let g:solarized_termcolors=256
+
+colorscheme solarized
+
 
 " Change background color
 set background=dark
