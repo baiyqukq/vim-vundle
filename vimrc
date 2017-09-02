@@ -254,7 +254,12 @@ nnoremap <silent> <F7> :UpdateTypesFile <CR>
 call camelcasemotion#CreateMotionMappings('<leader>')
 
 "------------------------------------------------------------
+" Cscope
+"------------------------------------------------------------
+set cscopequickfix=s-,c-,d-,i-,t-,e-
+
+"------------------------------------------------------------
 " Map
 "------------------------------------------------------------
-nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=+iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR>
+nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=+iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR><CR>!cscope -bqRs ../src<CR>
 nmap <Leader>m :wa<CR>:make<CR><CR>:cw<CR>
