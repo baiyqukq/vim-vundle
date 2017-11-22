@@ -152,19 +152,25 @@ let g:load_doxygen_syntax=1
 let g:pascal_delphi=1
 let g:pascal_fpc=1
 
+" Wildmenu
+if has("wildmenu")
+	set wildmenu
+	set wildmode=longest,list
+endif
+
 " Color scheme
 "colorscheme desert
 "colorscheme wombat 
 "colorscheme inkpot
 "colorscheme molokai
-"colorscheme wombat256mod
+colorscheme wombat256mod
 "colorscheme jellybeans
 "colorscheme lucius
 "colorscheme monokai
 
 let g:solarized_termcolors=256
 
-colorscheme solarized
+"colorscheme solarized
 
 
 " Change background color
