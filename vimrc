@@ -53,6 +53,7 @@ Plugin 'vim-scripts/OmniCppComplete'
 "Plugin 'nathanaelkane/vim-indent-guides'		" Indent by highlight
 Plugin 'Yggdroot/indentLine'					" Indent by line
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'tenfyzhong/vim-gencode-cpp'				" Auto generate function definition or declaration
 
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
