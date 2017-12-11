@@ -96,8 +96,8 @@ set encoding=utf-8
 set termencoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,gb18030,gb2312,cp930
 
-" Do wrap
-set nowrap
+" wrap
+set wrap
 
 " Use mouse
 set mouse=a
@@ -169,13 +169,16 @@ colorscheme wombat256mod
 "colorscheme lucius
 "colorscheme monokai
 
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 
 "colorscheme solarized
 
 
 " Change background color
 set background=dark
+
+" Transparent
+hi Normal  ctermfg=252 ctermbg=none
 
 " enable modeline(Good thing)
 set modeline
@@ -198,12 +201,14 @@ let &path.="/usr/include,/usr/local/include,"
 "set tags+=~/.vim/tags/systags
 set tags+=~/.vim/tags/SDL2tags
 set tags+=~/.vim/tags/tinyxml2tags
+set tags+=~/.vim/tags/luatags
 
 " FileType
 autocmd BufNewFile,BufRead *.psql			set filetype=psql
 autocmd BufNewFile,BufRead *.postgresql 	set filetype=postgresql
 autocmd BufNewFile,BufRead *.proto			set filetype=proto
 autocmd BufNewFile,BufRead *.md				set filetype=markdown
+autocmd BufNewFile,BufRead *.nut			set filetype=squirrel
 
 " Dictionaries
 set dict+=~/.vim/dict/words_c
@@ -269,4 +274,4 @@ set cscopequickfix=s-,c-,d-,i-,t-,e-
 " Map
 "------------------------------------------------------------
 nnoremap <silent> <F8> :!ctags -R --fields=+lS --fields=+iaS --c++-kinds=+p --extra=+q ../src<CR><CR>:UpdateTypesFile<CR><CR>!cscope -bqRs ../src<CR>
-nmap <Leader>m :wa<CR>:make<CR><CR>:cw<CR>
+nmap <Leader>m :wa<CR>:make <CR><CR>:cw<CR>
