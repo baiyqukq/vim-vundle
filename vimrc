@@ -16,6 +16,9 @@
 "		$ sudo apt install git
 "	* Vundle
 "		git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+"	* Windows
+"		UltiSnips requires py >= 2.7 or py3
+"		The simplest method is installing python2.7(x86)
 "============================================================
 
 "------------------------------------------------------------
@@ -23,6 +26,9 @@
 "------------------------------------------------------------
 " Use Vim settings, rather than Vi settings
 set nocompatible
+
+let $LANG='en'
+set langmenu=en
 
 filetype off		" Vundle required
 
