@@ -170,10 +170,11 @@ endif
 "colorscheme wombat 
 "colorscheme inkpot
 "colorscheme molokai
-colorscheme wombat256mod
+"colorscheme wombat256mod
 "colorscheme jellybeans
 "colorscheme lucius
 "colorscheme monokai
+colorscheme molokai
 
 "let g:solarized_termcolors=256
 
